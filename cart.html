@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="store.js"></script>
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+<body>
+        <section id="header">
+            <a href="#"><img src="open page/Screenshot croped.png" class="logo" alt=""></a>
+            <div >
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="shop.html">Shop</a></li>
+                    <li><a  href="blog.html">Blog</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <li><a class="active" href="cart.html"><i class="fa fa-shopping-bag" ></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+    
+    <section id="page-header" class="about-header">
+        
+        <h2>#lets's_talk</h2>
+
+        <p>LEAVE A MESSAGE.We love to hear from you!</p>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Only For You!   </h2>
+        <p>New Collection</p>
+        <div class="pro-container">
+        <div class="pro">
+            <img src="open page/cart/cart12.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Stlish white Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Stlish white Jacket" 
+            data-price="1999"
+            data-image-src="open page/cart/cart12.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        
+            <span class="cart">&#128722</span>
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart10.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>Zara</span>
+                <h5>Combo black dress</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹2999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Combo black dress" 
+            data-price="2999"
+            data-image-src="open page/cart/cart10.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+
+
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart4.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>H&M</span>
+                <h5>1-3yrs combo</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1599</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="1-3yrs combo" 
+            data-price="1599"
+            data-image-src="open page/cart/cart4.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart6.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>Twills</span>
+                <h5>Sharara suit</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Sharara suit" 
+            data-price="3999"
+            data-image-src="open page/cart/cart6.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart7.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>Forever 21</span>
+                <h5>Modern Cambo for womem</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Modern Cambo Pack" 
+            data-price="1999"
+            data-image-src="open page/cart/cart7.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart8.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>Rare Rabbit</span>
+                <h5>Bkack Tshirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹2599</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Bkack Tshirt" 
+            data-price="2599"
+            data-image-src="open page/cart/cart8.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart13.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>U.S. Polo Assn</span>
+                <h5>White Saree</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹3999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="White Saree" 
+            data-price="3999"
+            data-image-src="open page/cart/cart13.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        </div>
+        <div class="pro">
+            <img src="open page/cart/cart9.jpg" alt="" height="200px" width="35px">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Red Kurtha</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1999</h4>
+            </div>
+            <button class="btn btn-danger add-to-cart" type="button" 
+            data-product-name="Red Kurtha" 
+            data-price="1999"
+            data-image-src="open page/cart/cart9.jpg"
+            onclick="addToCart(this)">Add to cart</button>
+        </div> 
+    </div>
+    </section>
+    <section id="cart" class="section-p1" >
+        <table width="100%" border="1px" cellspacing="0" >
+            <thead>
+                <tr>
+                    <td style="font-size:large; font-weight: 700; font: bold;" >Remove</td>
+                    <td style="font-size:large; font-weight: 700; font: bold;">Image</td>
+                    <td style="font-size:large; font-weight: 700; font: bold;">Product</td>
+                    <td style="font-size:large; font-weight: 700; font: bold;">Price</td>
+                    <td style="font-size:large; font-weight: 700; font: bold;">Quantity</td>
+                    <td style="font-size:large; font-weight: 700; font: bold;" colspan="4">Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <tbody id="cart-table-body">
+                        <!-- Cart items will be added dynamically here -->
+                    </tbody>
+                    
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <td colspan="5" id="subtotal" style="font-size:large; font-weight: 700; font: bold;">Total Amount:</td>
+
+                
+               
+            </tfoot>
+        </table>
+        <button class="btn btn-custom" onclick="makePayment()">Make Payment</button>
+
+    </section>
+    <hr>
+
+   
+    <footer class="section-p1">
+        <div class="col">
+            <img src="open page/Screenshot croped.png" class="logo" alt="">            
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> H no : 1-10-125/14/1,Begumpet,Hyderabad</p>
+            <p><strong>Phone:</strong> +91 8121349030</p>
+            <p><strong>Hours:</strong> 10:00 - 20:00 ,Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About us</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Trims & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col instal">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="open page/appstore.jpg" alt="appstore" height="25px" width="150px">
+            </div><br>
+            <p>Secured Payment Gateways</p>
+            <img src="open page/payment.jpg" alt="payment" height="70px" width="150px">
+        </div>
+    </footer>
+    
+</body>
+</html>
